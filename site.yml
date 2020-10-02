@@ -5,6 +5,6 @@
   roles:
     - common
     - nginx
-#    - serverspec
-#    - serverspec_sample
-#    - jenkins
+    - serverspec
+    - serverspec_sample
+    - jenkins

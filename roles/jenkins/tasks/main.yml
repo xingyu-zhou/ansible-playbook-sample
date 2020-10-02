@@ -4,10 +4,10 @@
   yum: name=java-1.8.0-openjdk-devel state=installed
 
 - name: download yum repository file of jenkins
-  get_url: url=http://pkg.jenkins-ci.org/redhat/jenkins.repo dest=/etc/yum.repos.d/jenkins.repo mode=0644
+  get_url: url=https://pkg.jenkins.io/redhat-stable/jenkins.repo dest=/etc/yum.repos.d/jenkins.repo mode=0644
 
 - name: import rpm key
-  rpm_key: state=present key=http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+  rpm_key: state=present key=https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 
 - name: install jenkins
   yum: name=jenkins state=installed
